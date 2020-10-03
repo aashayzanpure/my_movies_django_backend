@@ -6,3 +6,8 @@ class Movie(models.Model):
     title = models.CharField(max_length=32)
     desc = models.CharField(max_length=256)
     year = models.IntegerField()
+
+class Series(models.Model):
+	title = models.CharField(max_length=30)
+	desc = models.CharField(max_length=256)
+	lang = models.CharField(max_length = 10)
